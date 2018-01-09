@@ -1,4 +1,4 @@
-# Sample Code
+Sample Code
 =============
 
 List of projects:
