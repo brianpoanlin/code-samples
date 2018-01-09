@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0D67660D737D773FF54094 /* Pods_NovestaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B911E795D218EEA336A3CAB /* Pods_NovestaUITests.framework */; };
+		78BF56BD1F77D8410098ED7A /* novesta_dock_portfolio2.png in Resources */ = {isa = PBXBuildFile; fileRef = 78BF56BA1F77D4FB0098ED7A /* novesta_dock_portfolio2.png */; };
+		78BF56BE1F77D8450098ED7A /* novesta_dock_market2.png in Resources */ = {isa = PBXBuildFile; fileRef = 78BF56BB1F77D4FF0098ED7A /* novesta_dock_market2.png */; };
+		78BF56BF1F77D8470098ED7A /* novesta_dock_investors2.png in Resources */ = {isa = PBXBuildFile; fileRef = 78BF56BC1F77D5030098ED7A /* novesta_dock_investors2.png */; };
+		78E2A69D1F77A73B000B3A58 /* Animated_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2A69C1F77A73B000B3A58 /* Animated_Down.swift */; };
+		AB2EA97E7551E9C70D14923F /* Pods_Novesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A426FBEFC7EBD162744E8C39 /* Pods_Novesta.framework */; };
+		AF0A5C2D1F7631A300E808D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A5C2C1F7631A300E808D6 /* AppDelegate.swift */; };
+		AF0A5C321F7631A300E808D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0A5C301F7631A300E808D6 /* Main.storyboard */; };
+		AF0A5C341F7631A300E808D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0A5C331F7631A300E808D6 /* Assets.xcassets */; };
+		AF0A5C371F7631A300E808D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0A5C351F7631A300E808D6 /* LaunchScreen.storyboard */; };
+		AF0A5C421F7631A300E808D6 /* NovestaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A5C411F7631A300E808D6 /* NovestaTests.swift */; };
+		AF0A5C4D1F7631A300E808D6 /* NovestaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A5C4C1F7631A300E808D6 /* NovestaUITests.swift */; };
+		AF0A5C5D1F76335A00E808D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0A5C5C1F7632FD00E808D6 /* GoogleService-Info.plist */; };
+		AF0A5C5F1F7633C200E808D6 /* LogIn_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A5C5E1F7633C200E808D6 /* LogIn_ViewController.swift */; };
+		AF0A5C611F76ADE800E808D6 /* Main_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A5C601F76ADE800E808D6 /* Main_ViewController.swift */; };
+		AF0A5C651F76AFCA00E808D6 /* Novesta_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF0A5C631F76AFCA00E808D6 /* Novesta_TableViewCell.xib */; };
+		AF345BE01F76C47F00589180 /* novesta_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BDF1F76C47B00589180 /* novesta_logo.png */; };
+		AF345BE41F76CBEC00589180 /* novesta_logo_highquality.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BE31F76CBE900589180 /* novesta_logo_highquality.png */; };
+		AF345BE61F76CF0300589180 /* Market_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345BE51F76CF0300589180 /* Market_ViewController.swift */; };
+		AF345BE91F76D15A00589180 /* darrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BE81F76CFA000589180 /* darrow.png */; };
+		AF345BEA1F76D15C00589180 /* uarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BE71F76CF9F00589180 /* uarrow.png */; };
+		AF345C121F76E0A500589180 /* ark.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF11F76E03E00589180 /* ark.png */; };
+		AF345C131F76E0A500589180 /* bitcoin-cash.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF21F76E03E00589180 /* bitcoin-cash.png */; };
+		AF345C151F76E0A500589180 /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BFC1F76E04000589180 /* dash.png */; };
+		AF345C161F76E0A500589180 /* bitconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BFE1F76E08700589180 /* bitconnect.png */; };
+		AF345C171F76E0A500589180 /* ethereum-classic.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF61F76E03F00589180 /* ethereum-classic.png */; };
+		AF345C181F76E0A500589180 /* ethereum.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF91F76E03F00589180 /* ethereum.png */; };
+		AF345C1A1F76E0A500589180 /* lisk.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF51F76E03F00589180 /* lisk.png */; };
+		AF345C1B1F76E0A500589180 /* litecoin.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BFD1F76E04000589180 /* litecoin.png */; };
+		AF345C1C1F76E0A500589180 /* monero.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BEB1F76E03D00589180 /* monero.png */; };
+		AF345C1D1F76E0A500589180 /* nem.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BFB1F76E03F00589180 /* nem.png */; };
+		AF345C1E1F76E0A500589180 /* neo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF71F76E03F00589180 /* neo.png */; };
+		AF345C1F1F76E0A500589180 /* qtum.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF81F76E03F00589180 /* qtum.png */; };
+		AF345C201F76E0A500589180 /* ripple.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BED1F76E03E00589180 /* ripple.png */; };
+		AF345C211F76E0A500589180 /* stratis.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF01F76E03E00589180 /* stratis.png */; };
+		AF345C221F76E0A500589180 /* tether.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF31F76E03F00589180 /* tether.png */; };
+		AF345C231F76E0A500589180 /* waves.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BEE1F76E03E00589180 /* waves.png */; };
+		AF345C241F76E0A500589180 /* zcash.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BF41F76E03F00589180 /* zcash.png */; };
+		AF345C251F76E0A500589180 /* bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = AF345BDC1F76C18800589180 /* bitcoin.png */; };
+		AF345C271F76E76700589180 /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345C261F76E76700589180 /* Animated.swift */; };
+		AF345C291F76E99700589180 /* Animated_Right.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345C281F76E99700589180 /* Animated_Right.swift */; };
+		AF345C2B1F76FBF400589180 /* League_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345C2A1F76FBF400589180 /* League_ViewController.swift */; };
+		AF345C3A1F77736200589180 /* leagueCellTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF345C371F77556300589180 /* leagueCellTVC.xib */; };
+		AF345C3C1F7781E200589180 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345C3B1F7781E200589180 /* StockViewController.swift */; };
+		AFEBF4311F778A2600F2D9DB /* omisego.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4301F778A2000F2D9DB /* omisego.png */; };
+		AFEBF4331F778A2C00F2D9DB /* iota.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF42F1F778A1600F2D9DB /* iota.png */; };
+		AFEBF4351F778A3800F2D9DB /* steem.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4341F778A3500F2D9DB /* steem.png */; };
+		AFEBF4431F779ACE00F2D9DB /* novesta_dock_faceoff.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4391F779AA900F2D9DB /* novesta_dock_faceoff.png */; };
+		AFEBF4441F779ACE00F2D9DB /* novesta_dock_investors.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF43B1F779AAA00F2D9DB /* novesta_dock_investors.png */; };
+		AFEBF4451F779ACE00F2D9DB /* novesta_dock_market.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4371F779AA800F2D9DB /* novesta_dock_market.png */; };
+		AFEBF4461F779ACE00F2D9DB /* novesta_dock_portfolio.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4411F779AAD00F2D9DB /* novesta_dock_portfolio.png */; };
+		AFEBF4471F779ACE00F2D9DB /* novesta_dock_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4361F779AA800F2D9DB /* novesta_dock_settings.png */; };
+		AFEBF4481F779ACE00F2D9DB /* novesta_faceoff_header.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4381F779AA900F2D9DB /* novesta_faceoff_header.png */; };
+		AFEBF4491F779ACE00F2D9DB /* novesta_investors_header.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF43A1F779AAA00F2D9DB /* novesta_investors_header.png */; };
+		AFEBF44A1F779ACE00F2D9DB /* novesta_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4421F779AAD00F2D9DB /* novesta_logo2.png */; };
+		AFEBF44B1F779ACE00F2D9DB /* novesta_market_header.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF43E1F779AAB00F2D9DB /* novesta_market_header.png */; };
+		AFEBF44C1F779ACE00F2D9DB /* novesta_portfolio_header.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF43D1F779AAB00F2D9DB /* novesta_portfolio_header.png */; };
+		AFEBF44D1F779ACE00F2D9DB /* novesta_settings_header.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEBF4401F779AAC00F2D9DB /* novesta_settings_header.png */; };
+		EFCD006801C0F3A94402B8AA /* Pods_NovestaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A05AA507C5639E6BB0A0A22 /* Pods_NovestaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF0A5C3E1F7631A300E808D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0A5C211F7631A300E808D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0A5C281F7631A300E808D6;
+			remoteInfo = Novesta;
+		};
+		AF0A5C491F7631A300E808D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0A5C211F7631A300E808D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0A5C281F7631A300E808D6;
+			remoteInfo = Novesta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A05AA507C5639E6BB0A0A22 /* Pods_NovestaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovestaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B911E795D218EEA336A3CAB /* Pods_NovestaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovestaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC44E1E6B330163361C180A /* Pods-NovestaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovestaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovestaUITests/Pods-NovestaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FF7B08897AF07BFB97A194D /* Pods-NovestaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovestaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovestaUITests/Pods-NovestaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		71CC6D6CDBF950C6529F0DF2 /* Pods-Novesta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novesta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Novesta/Pods-Novesta.release.xcconfig"; sourceTree = "<group>"; };
+		78BF56BA1F77D4FB0098ED7A /* novesta_dock_portfolio2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novesta_dock_portfolio2.png; sourceTree = "<group>"; };
+		78BF56BB1F77D4FF0098ED7A /* novesta_dock_market2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novesta_dock_market2.png; sourceTree = "<group>"; };
+		78BF56BC1F77D5030098ED7A /* novesta_dock_investors2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novesta_dock_investors2.png; sourceTree = "<group>"; };
+		78E2A69C1F77A73B000B3A58 /* Animated_Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animated_Down.swift; sourceTree = "<group>"; };
+		9F4C283DFC69B7A0D216E8BC /* Pods-Novesta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novesta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Novesta/Pods-Novesta.debug.xcconfig"; sourceTree = "<group>"; };
+		A426FBEFC7EBD162744E8C39 /* Pods_Novesta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Novesta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0AD767977EC77989A18745 /* Pods-NovestaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovestaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovestaTests/Pods-NovestaTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF0A5C291F7631A300E808D6 /* Novesta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novesta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0A5C2C1F7631A300E808D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF0A5C311F7631A300E808D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF0A5C331F7631A300E808D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF0A5C361F7631A300E808D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF0A5C381F7631A300E808D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0A5C3D1F7631A300E808D6 /* NovestaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovestaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0A5C411F7631A300E808D6 /* NovestaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovestaTests.swift; sourceTree = "<group>"; };
+		AF0A5C431F7631A300E808D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0A5C481F7631A300E808D6 /* NovestaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovestaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0A5C4C1F7631A300E808D6 /* NovestaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovestaUITests.swift; sourceTree = "<group>"; };
+		AF0A5C4E1F7631A300E808D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0A5C5C1F7632FD00E808D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF0A5C5E1F7633C200E808D6 /* LogIn_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn_ViewController.swift; sourceTree = "<group>"; };
+		AF0A5C601F76ADE800E808D6 /* Main_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_ViewController.swift; sourceTree = "<group>"; };
+		AF0A5C631F76AFCA00E808D6 /* Novesta_TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Novesta_TableViewCell.xib; sourceTree = "<group>"; };
+		AF345BDC1F76C18800589180 /* bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin.png; sourceTree = "<group>"; };
+		AF345BDF1F76C47B00589180 /* novesta_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_logo.png; path = ../../../../Res/Logo/novesta_logo.png; sourceTree = "<group>"; };
+		AF345BE31F76CBE900589180 /* novesta_logo_highquality.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_logo_highquality.png; path = ../../../../Res/Logo/novesta_logo_highquality.png; sourceTree = "<group>"; };
+		AF345BE51F76CF0300589180 /* Market_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market_ViewController.swift; sourceTree = "<group>"; };
+		AF345BE71F76CF9F00589180 /* uarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uarrow.png; path = ../../../../Res/Logo/uarrow.png; sourceTree = "<group>"; };
+		AF345BE81F76CFA000589180 /* darrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darrow.png; path = ../../../../Res/Logo/darrow.png; sourceTree = "<group>"; };
+		AF345BEB1F76E03D00589180 /* monero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero.png; sourceTree = "<group>"; };
+		AF345BED1F76E03E00589180 /* ripple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ripple.png; sourceTree = "<group>"; };
+		AF345BEE1F76E03E00589180 /* waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waves.png; sourceTree = "<group>"; };
+		AF345BF01F76E03E00589180 /* stratis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stratis.png; sourceTree = "<group>"; };
+		AF345BF11F76E03E00589180 /* ark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ark.png; sourceTree = "<group>"; };
+		AF345BF21F76E03E00589180 /* bitcoin-cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-cash.png"; sourceTree = "<group>"; };
+		AF345BF31F76E03F00589180 /* tether.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tether.png; sourceTree = "<group>"; };
+		AF345BF41F76E03F00589180 /* zcash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zcash.png; sourceTree = "<group>"; };
+		AF345BF51F76E03F00589180 /* lisk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisk.png; sourceTree = "<group>"; };
+		AF345BF61F76E03F00589180 /* ethereum-classic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ethereum-classic.png"; sourceTree = "<group>"; };
+		AF345BF71F76E03F00589180 /* neo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neo.png; sourceTree = "<group>"; };
+		AF345BF81F76E03F00589180 /* qtum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qtum.png; sourceTree = "<group>"; };
+		AF345BF91F76E03F00589180 /* ethereum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ethereum.png; sourceTree = "<group>"; };
+		AF345BFB1F76E03F00589180 /* nem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nem.png; sourceTree = "<group>"; };
+		AF345BFC1F76E04000589180 /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
+		AF345BFD1F76E04000589180 /* litecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin.png; sourceTree = "<group>"; };
+		AF345BFE1F76E08700589180 /* bitconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitconnect.png; sourceTree = "<group>"; };
+		AF345C261F76E76700589180 /* Animated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animated.swift; sourceTree = "<group>"; };
+		AF345C281F76E99700589180 /* Animated_Right.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animated_Right.swift; sourceTree = "<group>"; };
+		AF345C2A1F76FBF400589180 /* League_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League_ViewController.swift; sourceTree = "<group>"; };
+		AF345C371F77556300589180 /* leagueCellTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = leagueCellTVC.xib; sourceTree = "<group>"; };
+		AF345C3B1F7781E200589180 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		AFEBF42F1F778A1600F2D9DB /* iota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iota.png; sourceTree = "<group>"; };
+		AFEBF4301F778A2000F2D9DB /* omisego.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = omisego.png; sourceTree = "<group>"; };
+		AFEBF4341F778A3500F2D9DB /* steem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steem.png; sourceTree = "<group>"; };
+		AFEBF4361F779AA800F2D9DB /* novesta_dock_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_dock_settings.png; path = ../../../../Res/Logo/novesta_dock_settings.png; sourceTree = "<group>"; };
+		AFEBF4371F779AA800F2D9DB /* novesta_dock_market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_dock_market.png; path = ../../../../Res/Logo/novesta_dock_market.png; sourceTree = "<group>"; };
+		AFEBF4381F779AA900F2D9DB /* novesta_faceoff_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_faceoff_header.png; path = ../../../../Res/Logo/novesta_faceoff_header.png; sourceTree = "<group>"; };
+		AFEBF4391F779AA900F2D9DB /* novesta_dock_faceoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_dock_faceoff.png; path = ../../../../Res/Logo/novesta_dock_faceoff.png; sourceTree = "<group>"; };
+		AFEBF43A1F779AAA00F2D9DB /* novesta_investors_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_investors_header.png; path = ../../../../Res/Logo/novesta_investors_header.png; sourceTree = "<group>"; };
+		AFEBF43B1F779AAA00F2D9DB /* novesta_dock_investors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_dock_investors.png; path = ../../../../Res/Logo/novesta_dock_investors.png; sourceTree = "<group>"; };
+		AFEBF43C1F779AAB00F2D9DB /* novesta_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_logo.png; path = ../../../../Res/Logo/novesta_logo.png; sourceTree = "<group>"; };
+		AFEBF43D1F779AAB00F2D9DB /* novesta_portfolio_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_portfolio_header.png; path = ../../../../Res/Logo/novesta_portfolio_header.png; sourceTree = "<group>"; };
+		AFEBF43E1F779AAB00F2D9DB /* novesta_market_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_market_header.png; path = ../../../../Res/Logo/novesta_market_header.png; sourceTree = "<group>"; };
+		AFEBF4401F779AAC00F2D9DB /* novesta_settings_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_settings_header.png; path = ../../../../Res/Logo/novesta_settings_header.png; sourceTree = "<group>"; };
+		AFEBF4411F779AAD00F2D9DB /* novesta_dock_portfolio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_dock_portfolio.png; path = ../../../../Res/Logo/novesta_dock_portfolio.png; sourceTree = "<group>"; };
+		AFEBF4421F779AAD00F2D9DB /* novesta_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = novesta_logo2.png; path = ../../../../Res/Logo/novesta_logo2.png; sourceTree = "<group>"; };
+		DAA110008354D85870A3A14F /* Pods-NovestaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovestaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovestaTests/Pods-NovestaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF0A5C261F7631A300E808D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2EA97E7551E9C70D14923F /* Pods_Novesta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A5C3A1F7631A300E808D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCD006801C0F3A94402B8AA /* Pods_NovestaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A5C451F7631A300E808D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0D67660D737D773FF54094 /* Pods_NovestaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF0A5C201F7631A300E808D6 = {
+			isa = PBXGroup;
+			children = (
+				AF0A5C2B1F7631A300E808D6 /* Novesta */,
+				AF0A5C401F7631A300E808D6 /* NovestaTests */,
+				AF0A5C4B1F7631A300E808D6 /* NovestaUITests */,
+				AF0A5C2A1F7631A300E808D6 /* Products */,
+				B400E8B9B2272ECB13FA2CF9 /* Pods */,
+				F92EC0E7333D319A6AD28901 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF0A5C2A1F7631A300E808D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A5C291F7631A300E808D6 /* Novesta.app */,
+				AF0A5C3D1F7631A300E808D6 /* NovestaTests.xctest */,
+				AF0A5C481F7631A300E808D6 /* NovestaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF0A5C2B1F7631A300E808D6 /* Novesta */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A5C2C1F7631A300E808D6 /* AppDelegate.swift */,
+				AF0A5C5E1F7633C200E808D6 /* LogIn_ViewController.swift */,
+				AF0A5C601F76ADE800E808D6 /* Main_ViewController.swift */,
+				AF345BE51F76CF0300589180 /* Market_ViewController.swift */,
+				AF345C2A1F76FBF400589180 /* League_ViewController.swift */,
+				AF345C3B1F7781E200589180 /* StockViewController.swift */,
+				AF0A5C301F7631A300E808D6 /* Main.storyboard */,
+				78E2A69C1F77A73B000B3A58 /* Animated_Down.swift */,
+				AF345C281F76E99700589180 /* Animated_Right.swift */,
+				AF345C261F76E76700589180 /* Animated.swift */,
+				AF0A5C631F76AFCA00E808D6 /* Novesta_TableViewCell.xib */,
+				AF345C371F77556300589180 /* leagueCellTVC.xib */,
+				AF0A5C331F7631A300E808D6 /* Assets.xcassets */,
+				AF0A5C351F7631A300E808D6 /* LaunchScreen.storyboard */,
+				AF0A5C381F7631A300E808D6 /* Info.plist */,
+				AF0A5C5C1F7632FD00E808D6 /* GoogleService-Info.plist */,
+				AF0A5C661F76BB7600E808D6 /* img_res */,
+			);
+			path = Novesta;
+			sourceTree = "<group>";
+		};
+		AF0A5C401F7631A300E808D6 /* NovestaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A5C411F7631A300E808D6 /* NovestaTests.swift */,
+				AF0A5C431F7631A300E808D6 /* Info.plist */,
+			);
+			path = NovestaTests;
+			sourceTree = "<group>";
+		};
+		AF0A5C4B1F7631A300E808D6 /* NovestaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A5C4C1F7631A300E808D6 /* NovestaUITests.swift */,
+				AF0A5C4E1F7631A300E808D6 /* Info.plist */,
+			);
+			path = NovestaUITests;
+			sourceTree = "<group>";
+		};
+		AF0A5C661F76BB7600E808D6 /* img_res */ = {
+			isa = PBXGroup;
+			children = (
+				AFEBF4391F779AA900F2D9DB /* novesta_dock_faceoff.png */,
+				AFEBF43B1F779AAA00F2D9DB /* novesta_dock_investors.png */,
+				78BF56BC1F77D5030098ED7A /* novesta_dock_investors2.png */,
+				78BF56BB1F77D4FF0098ED7A /* novesta_dock_market2.png */,
+				78BF56BA1F77D4FB0098ED7A /* novesta_dock_portfolio2.png */,
+				AFEBF4371F779AA800F2D9DB /* novesta_dock_market.png */,
+				AFEBF4411F779AAD00F2D9DB /* novesta_dock_portfolio.png */,
+				AFEBF4361F779AA800F2D9DB /* novesta_dock_settings.png */,
+				AFEBF4381F779AA900F2D9DB /* novesta_faceoff_header.png */,
+				AFEBF43A1F779AAA00F2D9DB /* novesta_investors_header.png */,
+				AFEBF43C1F779AAB00F2D9DB /* novesta_logo.png */,
+				AFEBF4421F779AAD00F2D9DB /* novesta_logo2.png */,
+				AFEBF43E1F779AAB00F2D9DB /* novesta_market_header.png */,
+				AFEBF43D1F779AAB00F2D9DB /* novesta_portfolio_header.png */,
+				AFEBF4401F779AAC00F2D9DB /* novesta_settings_header.png */,
+				AF345BE81F76CFA000589180 /* darrow.png */,
+				AF345BE71F76CF9F00589180 /* uarrow.png */,
+				AF345BE31F76CBE900589180 /* novesta_logo_highquality.png */,
+				AF345BDF1F76C47B00589180 /* novesta_logo.png */,
+				AF345BF11F76E03E00589180 /* ark.png */,
+				AF345BF21F76E03E00589180 /* bitcoin-cash.png */,
+				AF345BFC1F76E04000589180 /* dash.png */,
+				AF345BFE1F76E08700589180 /* bitconnect.png */,
+				AF345BF61F76E03F00589180 /* ethereum-classic.png */,
+				AF345BF91F76E03F00589180 /* ethereum.png */,
+				AFEBF42F1F778A1600F2D9DB /* iota.png */,
+				AFEBF4341F778A3500F2D9DB /* steem.png */,
+				AFEBF4301F778A2000F2D9DB /* omisego.png */,
+				AF345BF51F76E03F00589180 /* lisk.png */,
+				AF345BFD1F76E04000589180 /* litecoin.png */,
+				AF345BEB1F76E03D00589180 /* monero.png */,
+				AF345BFB1F76E03F00589180 /* nem.png */,
+				AF345BF71F76E03F00589180 /* neo.png */,
+				AF345BF81F76E03F00589180 /* qtum.png */,
+				AF345BED1F76E03E00589180 /* ripple.png */,
+				AF345BF01F76E03E00589180 /* stratis.png */,
+				AF345BF31F76E03F00589180 /* tether.png */,
+				AF345BEE1F76E03E00589180 /* waves.png */,
+				AF345BF41F76E03F00589180 /* zcash.png */,
+				AF345BDC1F76C18800589180 /* bitcoin.png */,
+			);
+			path = img_res;
+			sourceTree = "<group>";
+		};
+		B400E8B9B2272ECB13FA2CF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F4C283DFC69B7A0D216E8BC /* Pods-Novesta.debug.xcconfig */,
+				71CC6D6CDBF950C6529F0DF2 /* Pods-Novesta.release.xcconfig */,
+				DAA110008354D85870A3A14F /* Pods-NovestaTests.debug.xcconfig */,
+				AB0AD767977EC77989A18745 /* Pods-NovestaTests.release.xcconfig */,
+				0FC44E1E6B330163361C180A /* Pods-NovestaUITests.debug.xcconfig */,
+				1FF7B08897AF07BFB97A194D /* Pods-NovestaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F92EC0E7333D319A6AD28901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A426FBEFC7EBD162744E8C39 /* Pods_Novesta.framework */,
+				0A05AA507C5639E6BB0A0A22 /* Pods_NovestaTests.framework */,
+				0B911E795D218EEA336A3CAB /* Pods_NovestaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF0A5C281F7631A300E808D6 /* Novesta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0A5C511F7631A300E808D6 /* Build configuration list for PBXNativeTarget "Novesta" */;
+			buildPhases = (
+				0043E6FAF7BE14975EDA9615 /* [CP] Check Pods Manifest.lock */,
+				AF0A5C251F7631A300E808D6 /* Sources */,
+				AF0A5C261F7631A300E808D6 /* Frameworks */,
+				AF0A5C271F7631A300E808D6 /* Resources */,
+				C79DC93D3318FAFF9957CC12 /* [CP] Embed Pods Frameworks */,
+				C0BC8738FDACEA3D9E687269 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Novesta;
+			productName = Novesta;
+			productReference = AF0A5C291F7631A300E808D6 /* Novesta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF0A5C3C1F7631A300E808D6 /* NovestaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0A5C541F7631A300E808D6 /* Build configuration list for PBXNativeTarget "NovestaTests" */;
+			buildPhases = (
+				402D8174AFB0192801CF8ED1 /* [CP] Check Pods Manifest.lock */,
+				AF0A5C391F7631A300E808D6 /* Sources */,
+				AF0A5C3A1F7631A300E808D6 /* Frameworks */,
+				AF0A5C3B1F7631A300E808D6 /* Resources */,
+				0A12CAF754BE6CAC79979F93 /* [CP] Embed Pods Frameworks */,
+				3CD06AE341C60A6E2875C906 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF0A5C3F1F7631A300E808D6 /* PBXTargetDependency */,
+			);
+			name = NovestaTests;
+			productName = NovestaTests;
+			productReference = AF0A5C3D1F7631A300E808D6 /* NovestaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF0A5C471F7631A300E808D6 /* NovestaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0A5C571F7631A300E808D6 /* Build configuration list for PBXNativeTarget "NovestaUITests" */;
+			buildPhases = (
+				8FD86B36A5CE680E649E334C /* [CP] Check Pods Manifest.lock */,
+				AF0A5C441F7631A300E808D6 /* Sources */,
+				AF0A5C451F7631A300E808D6 /* Frameworks */,
+				AF0A5C461F7631A300E808D6 /* Resources */,
+				16D815342AC9EB228EB7E4C7 /* [CP] Embed Pods Frameworks */,
+				EDA6939BE6F3DDA89CA24E82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF0A5C4A1F7631A300E808D6 /* PBXTargetDependency */,
+			);
+			name = NovestaUITests;
+			productName = NovestaUITests;
+			productReference = AF0A5C481F7631A300E808D6 /* NovestaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF0A5C211F7631A300E808D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Brian Lin";
+				TargetAttributes = {
+					AF0A5C281F7631A300E808D6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					AF0A5C3C1F7631A300E808D6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF0A5C281F7631A300E808D6;
+					};
+					AF0A5C471F7631A300E808D6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF0A5C281F7631A300E808D6;
+					};
+				};
+			};
+			buildConfigurationList = AF0A5C241F7631A300E808D6 /* Build configuration list for PBXProject "Novesta" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF0A5C201F7631A300E808D6;
+			productRefGroup = AF0A5C2A1F7631A300E808D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF0A5C281F7631A300E808D6 /* Novesta */,
+				AF0A5C3C1F7631A300E808D6 /* NovestaTests */,
+				AF0A5C471F7631A300E808D6 /* NovestaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF0A5C271F7631A300E808D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEBF4471F779ACE00F2D9DB /* novesta_dock_settings.png in Resources */,
+				AF345BE91F76D15A00589180 /* darrow.png in Resources */,
+				AF345C241F76E0A500589180 /* zcash.png in Resources */,
+				AF345C151F76E0A500589180 /* dash.png in Resources */,
+				AF345C231F76E0A500589180 /* waves.png in Resources */,
+				78BF56BF1F77D8470098ED7A /* novesta_dock_investors2.png in Resources */,
+				78BF56BD1F77D8410098ED7A /* novesta_dock_portfolio2.png in Resources */,
+				AFEBF4351F778A3800F2D9DB /* steem.png in Resources */,
+				AF345C1A1F76E0A500589180 /* lisk.png in Resources */,
+				AF345C211F76E0A500589180 /* stratis.png in Resources */,
+				AF345C3A1F77736200589180 /* leagueCellTVC.xib in Resources */,
+				AF345BE01F76C47F00589180 /* novesta_logo.png in Resources */,
+				AF345BE41F76CBEC00589180 /* novesta_logo_highquality.png in Resources */,
+				AF345C161F76E0A500589180 /* bitconnect.png in Resources */,
+				AFEBF4491F779ACE00F2D9DB /* novesta_investors_header.png in Resources */,
+				AFEBF44D1F779ACE00F2D9DB /* novesta_settings_header.png in Resources */,
+				AF345BEA1F76D15C00589180 /* uarrow.png in Resources */,
+				AFEBF44C1F779ACE00F2D9DB /* novesta_portfolio_header.png in Resources */,
+				AFEBF4431F779ACE00F2D9DB /* novesta_dock_faceoff.png in Resources */,
+				AF0A5C371F7631A300E808D6 /* LaunchScreen.storyboard in Resources */,
+				AF345C131F76E0A500589180 /* bitcoin-cash.png in Resources */,
+				AFEBF44B1F779ACE00F2D9DB /* novesta_market_header.png in Resources */,
+				AF345C1F1F76E0A500589180 /* qtum.png in Resources */,
+				AF0A5C651F76AFCA00E808D6 /* Novesta_TableViewCell.xib in Resources */,
+				AFEBF4311F778A2600F2D9DB /* omisego.png in Resources */,
+				78BF56BE1F77D8450098ED7A /* novesta_dock_market2.png in Resources */,
+				AF345C221F76E0A500589180 /* tether.png in Resources */,
+				AF345C171F76E0A500589180 /* ethereum-classic.png in Resources */,
+				AFEBF4331F778A2C00F2D9DB /* iota.png in Resources */,
+				AF345C1E1F76E0A500589180 /* neo.png in Resources */,
+				AF0A5C5D1F76335A00E808D6 /* GoogleService-Info.plist in Resources */,
+				AFEBF4451F779ACE00F2D9DB /* novesta_dock_market.png in Resources */,
+				AF345C1B1F76E0A500589180 /* litecoin.png in Resources */,
+				AF0A5C341F7631A300E808D6 /* Assets.xcassets in Resources */,
+				AF345C201F76E0A500589180 /* ripple.png in Resources */,
+				AFEBF44A1F779ACE00F2D9DB /* novesta_logo2.png in Resources */,
+				AF345C121F76E0A500589180 /* ark.png in Resources */,
+				AF345C1C1F76E0A500589180 /* monero.png in Resources */,
+				AFEBF4461F779ACE00F2D9DB /* novesta_dock_portfolio.png in Resources */,
+				AF345C1D1F76E0A500589180 /* nem.png in Resources */,
+				AF345C181F76E0A500589180 /* ethereum.png in Resources */,
+				AF0A5C321F7631A300E808D6 /* Main.storyboard in Resources */,
+				AF345C251F76E0A500589180 /* bitcoin.png in Resources */,
+				AFEBF4481F779ACE00F2D9DB /* novesta_faceoff_header.png in Resources */,
+				AFEBF4441F779ACE00F2D9DB /* novesta_dock_investors.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A5C3B1F7631A300E808D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A5C461F7631A300E808D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0043E6FAF7BE14975EDA9615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0A12CAF754BE6CAC79979F93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovestaTests/Pods-NovestaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16D815342AC9EB228EB7E4C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovestaUITests/Pods-NovestaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CD06AE341C60A6E2875C906 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovestaTests/Pods-NovestaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		402D8174AFB0192801CF8ED1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD86B36A5CE680E649E334C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BC8738FDACEA3D9E687269 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novesta/Pods-Novesta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79DC93D3318FAFF9957CC12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novesta/Pods-Novesta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA6939BE6F3DDA89CA24E82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovestaUITests/Pods-NovestaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF0A5C251F7631A300E808D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF345C271F76E76700589180 /* Animated.swift in Sources */,
+				AF345C291F76E99700589180 /* Animated_Right.swift in Sources */,
+				78E2A69D1F77A73B000B3A58 /* Animated_Down.swift in Sources */,
+				AF345BE61F76CF0300589180 /* Market_ViewController.swift in Sources */,
+				AF345C2B1F76FBF400589180 /* League_ViewController.swift in Sources */,
+				AF0A5C5F1F7633C200E808D6 /* LogIn_ViewController.swift in Sources */,
+				AF0A5C2D1F7631A300E808D6 /* AppDelegate.swift in Sources */,
+				AF0A5C611F76ADE800E808D6 /* Main_ViewController.swift in Sources */,
+				AF345C3C1F7781E200589180 /* StockViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A5C391F7631A300E808D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0A5C421F7631A300E808D6 /* NovestaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A5C441F7631A300E808D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0A5C4D1F7631A300E808D6 /* NovestaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF0A5C3F1F7631A300E808D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0A5C281F7631A300E808D6 /* Novesta */;
+			targetProxy = AF0A5C3E1F7631A300E808D6 /* PBXContainerItemProxy */;
+		};
+		AF0A5C4A1F7631A300E808D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0A5C281F7631A300E808D6 /* Novesta */;
+			targetProxy = AF0A5C491F7631A300E808D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF0A5C301F7631A300E808D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF0A5C311F7631A300E808D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF0A5C351F7631A300E808D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF0A5C361F7631A300E808D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF0A5C4F1F7631A300E808D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF0A5C501F7631A300E808D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF0A5C521F7631A300E808D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4C283DFC69B7A0D216E8BC /* Pods-Novesta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86Y7FL28N9;
+				INFOPLIST_FILE = Novesta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.Novesta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF0A5C531F7631A300E808D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CC6D6CDBF950C6529F0DF2 /* Pods-Novesta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86Y7FL28N9;
+				INFOPLIST_FILE = Novesta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.Novesta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF0A5C551F7631A300E808D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA110008354D85870A3A14F /* Pods-NovestaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86Y7FL28N9;
+				INFOPLIST_FILE = NovestaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.NovestaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novesta.app/Novesta";
+			};
+			name = Debug;
+		};
+		AF0A5C561F7631A300E808D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB0AD767977EC77989A18745 /* Pods-NovestaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86Y7FL28N9;
+				INFOPLIST_FILE = NovestaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.NovestaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novesta.app/Novesta";
+			};
+			name = Release;
+		};
+		AF0A5C581F7631A300E808D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC44E1E6B330163361C180A /* Pods-NovestaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86Y7FL28N9;
+				INFOPLIST_FILE = NovestaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.NovestaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Novesta;
+			};
+			name = Debug;
+		};
+		AF0A5C591F7631A300E808D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF7B08897AF07BFB97A194D /* Pods-NovestaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86Y7FL28N9;
+				INFOPLIST_FILE = NovestaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.NovestaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Novesta;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF0A5C241F7631A300E808D6 /* Build configuration list for PBXProject "Novesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0A5C4F1F7631A300E808D6 /* Debug */,
+				AF0A5C501F7631A300E808D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0A5C511F7631A300E808D6 /* Build configuration list for PBXNativeTarget "Novesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0A5C521F7631A300E808D6 /* Debug */,
+				AF0A5C531F7631A300E808D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0A5C541F7631A300E808D6 /* Build configuration list for PBXNativeTarget "NovestaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0A5C551F7631A300E808D6 /* Debug */,
+				AF0A5C561F7631A300E808D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0A5C571F7631A300E808D6 /* Build configuration list for PBXNativeTarget "NovestaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0A5C581F7631A300E808D6 /* Debug */,
+				AF0A5C591F7631A300E808D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF0A5C211F7631A300E808D6 /* Project object */;
+}
