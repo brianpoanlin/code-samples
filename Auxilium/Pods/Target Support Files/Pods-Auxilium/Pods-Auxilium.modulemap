@@ -1,0 +1,6 @@
+framework module Pods_Auxilium {
+  umbrella header "Pods-Auxilium-umbrella.h"
+
+  export *
+  module * { export * }
+}

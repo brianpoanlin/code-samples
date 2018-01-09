@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37A84D60DD52EFA599030C5D /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */; };
+		67122D28CBEF2CB49F7F2C52 /* Pods_AuxiliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */; };
+		AF2BE3EA1E46F8B200004582 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2BE3E91E46F8B200004582 /* left_arrow.png */; };
+		AF2BE3EC1E47098200004582 /* createEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BE3EB1E47098200004582 /* createEventViewController.swift */; };
+		AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376941E467E9500D99027 /* AppDelegate.swift */; };
+		AF33769A1E467E9500D99027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3376981E467E9500D99027 /* Main.storyboard */; };
+		AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF33769B1E467E9500D99027 /* Assets.xcassets */; };
+		AF33769F1E467E9500D99027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */; };
+		AF3376AA1E467E9500D99027 /* AuxiliumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376A91E467E9500D99027 /* AuxiliumTests.swift */; };
+		AF3376B51E467E9500D99027 /* AuxiliumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */; };
+		AF3376C31E46849100D99027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF3376C21E46849100D99027 /* GoogleService-Info.plist */; };
+		AF3376C51E46895800D99027 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376C41E46895800D99027 /* SignInViewController.swift */; };
+		AF3376C71E46897900D99027 /* Aux_Blue_Bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */; };
+		AF3376CB1E4689F400D99027 /* Logo_White.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3376CA1E4689F400D99027 /* Logo_White.png */; };
+		AF3376CD1E468EA600D99027 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376CC1E468EA600D99027 /* MainViewController.swift */; };
+		AF6EBF8E1E46C8380031C8F0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6EBF8D1E46C8380031C8F0 /* EventTableViewCell.xib */; };
+		AF6EBF901E46D2450031C8F0 /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EBF8F1E46D2450031C8F0 /* Food.png */; };
+		AF6EBF921E46D3250031C8F0 /* Clean.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EBF911E46D3250031C8F0 /* Clean.png */; };
+		AF81C33A1E476DAF006C36C3 /* Charity.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81C3391E476DAF006C36C3 /* Charity.png */; };
+		AFC72D0B1E46DB42003805CC /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC72D0A1E46DB42003805CC /* EventViewController.swift */; };
+		BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF3376A61E467E9500D99027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF3376891E467E9400D99027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF3376901E467E9400D99027;
+			remoteInfo = Auxilium;
+		};
+		AF3376B11E467E9500D99027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF3376891E467E9400D99027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF3376901E467E9400D99027;
+			remoteInfo = Auxilium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auxilium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134283224CBFF1EFBD4D921F /* Pods-AuxiliumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.release.xcconfig"; sourceTree = "<group>"; };
+		1725A781ED7017CEB460243E /* Pods-AuxiliumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.release.xcconfig"; sourceTree = "<group>"; };
+		83B9C6605A321177CD2A4B2C /* Pods-AuxiliumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.debug.xcconfig"; sourceTree = "<group>"; };
+		AF2BE3E91E46F8B200004582 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		AF2BE3EB1E47098200004582 /* createEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = createEventViewController.swift; path = ../createEventViewController.swift; sourceTree = "<group>"; };
+		AF3376911E467E9500D99027 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3376941E467E9500D99027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF3376991E467E9500D99027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF33769B1E467E9500D99027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF33769E1E467E9500D99027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF3376A01E467E9500D99027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3376A51E467E9500D99027 /* AuxiliumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuxiliumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3376A91E467E9500D99027 /* AuxiliumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliumTests.swift; sourceTree = "<group>"; };
+		AF3376AB1E467E9500D99027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3376B01E467E9500D99027 /* AuxiliumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuxiliumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliumUITests.swift; sourceTree = "<group>"; };
+		AF3376B61E467E9500D99027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3376C21E46849100D99027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF3376C41E46895800D99027 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aux_Blue_Bkg.png; sourceTree = "<group>"; };
+		AF3376CA1E4689F400D99027 /* Logo_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_White.png; sourceTree = "<group>"; };
+		AF3376CC1E468EA600D99027 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AF6EBF8C1E46C6B60031C8F0 /* Auxilium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Auxilium.entitlements; sourceTree = "<group>"; };
+		AF6EBF8D1E46C8380031C8F0 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		AF6EBF8F1E46D2450031C8F0 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
+		AF6EBF911E46D3250031C8F0 /* Clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clean.png; sourceTree = "<group>"; };
+		AF81C3391E476DAF006C36C3 /* Charity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charity.png; sourceTree = "<group>"; };
+		AFC72D0A1E46DB42003805CC /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF33768E1E467E9400D99027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3376A21E467E9500D99027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A84D60DD52EFA599030C5D /* Pods_AuxiliumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3376AD1E467E9500D99027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67122D28CBEF2CB49F7F2C52 /* Pods_AuxiliumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CC16E6D48610EEF5B4DD536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */,
+				CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */,
+				BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF3376881E467E9400D99027 = {
+			isa = PBXGroup;
+			children = (
+				AF3376931E467E9500D99027 /* Auxilium */,
+				AF3376A81E467E9500D99027 /* AuxiliumTests */,
+				AF3376B31E467E9500D99027 /* AuxiliumUITests */,
+				AF3376921E467E9500D99027 /* Products */,
+				B9969F2FB815391C0E956E14 /* Pods */,
+				8CC16E6D48610EEF5B4DD536 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF3376921E467E9500D99027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF3376911E467E9500D99027 /* Auxilium.app */,
+				AF3376A51E467E9500D99027 /* AuxiliumTests.xctest */,
+				AF3376B01E467E9500D99027 /* AuxiliumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF3376931E467E9500D99027 /* Auxilium */ = {
+			isa = PBXGroup;
+			children = (
+				AF6EBF8C1E46C6B60031C8F0 /* Auxilium.entitlements */,
+				AF3376941E467E9500D99027 /* AppDelegate.swift */,
+				AF2BE3EB1E47098200004582 /* createEventViewController.swift */,
+				AFC72D0A1E46DB42003805CC /* EventViewController.swift */,
+				AF3376CC1E468EA600D99027 /* MainViewController.swift */,
+				AF3376C41E46895800D99027 /* SignInViewController.swift */,
+				AF3376981E467E9500D99027 /* Main.storyboard */,
+				AF33769B1E467E9500D99027 /* Assets.xcassets */,
+				AF6EBF8D1E46C8380031C8F0 /* EventTableViewCell.xib */,
+				AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */,
+				AF6EBF8F1E46D2450031C8F0 /* Food.png */,
+				AF6EBF911E46D3250031C8F0 /* Clean.png */,
+				AF2BE3E91E46F8B200004582 /* left_arrow.png */,
+				AF3376A01E467E9500D99027 /* Info.plist */,
+				AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */,
+				AF81C3391E476DAF006C36C3 /* Charity.png */,
+				AF3376CA1E4689F400D99027 /* Logo_White.png */,
+				AF3376C21E46849100D99027 /* GoogleService-Info.plist */,
+			);
+			path = Auxilium;
+			sourceTree = "<group>";
+		};
+		AF3376A81E467E9500D99027 /* AuxiliumTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF3376A91E467E9500D99027 /* AuxiliumTests.swift */,
+				AF3376AB1E467E9500D99027 /* Info.plist */,
+			);
+			path = AuxiliumTests;
+			sourceTree = "<group>";
+		};
+		AF3376B31E467E9500D99027 /* AuxiliumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */,
+				AF3376B61E467E9500D99027 /* Info.plist */,
+			);
+			path = AuxiliumUITests;
+			sourceTree = "<group>";
+		};
+		B9969F2FB815391C0E956E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */,
+				4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */,
+				8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */,
+				134283224CBFF1EFBD4D921F /* Pods-AuxiliumTests.release.xcconfig */,
+				83B9C6605A321177CD2A4B2C /* Pods-AuxiliumUITests.debug.xcconfig */,
+				1725A781ED7017CEB460243E /* Pods-AuxiliumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF3376901E467E9400D99027 /* Auxilium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3376B91E467E9500D99027 /* Build configuration list for PBXNativeTarget "Auxilium" */;
+			buildPhases = (
+				F36F3BC1E7A8D8ED475BCE63 /* [CP] Check Pods Manifest.lock */,
+				AF33768D1E467E9400D99027 /* Sources */,
+				AF33768E1E467E9400D99027 /* Frameworks */,
+				AF33768F1E467E9400D99027 /* Resources */,
+				9A5D4F05AD622AC796C1A965 /* [CP] Embed Pods Frameworks */,
+				633817B000510B145138CA54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Auxilium;
+			productName = Auxilium;
+			productReference = AF3376911E467E9500D99027 /* Auxilium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF3376A41E467E9500D99027 /* AuxiliumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3376BC1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumTests" */;
+			buildPhases = (
+				BB17F88B66805892016ECDD5 /* [CP] Check Pods Manifest.lock */,
+				AF3376A11E467E9500D99027 /* Sources */,
+				AF3376A21E467E9500D99027 /* Frameworks */,
+				AF3376A31E467E9500D99027 /* Resources */,
+				1B2324C74AFFEB4AE6E677DF /* [CP] Embed Pods Frameworks */,
+				1C66C3501AFF0D79B06A85C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF3376A71E467E9500D99027 /* PBXTargetDependency */,
+			);
+			name = AuxiliumTests;
+			productName = AuxiliumTests;
+			productReference = AF3376A51E467E9500D99027 /* AuxiliumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF3376AF1E467E9500D99027 /* AuxiliumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3376BF1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumUITests" */;
+			buildPhases = (
+				7D72E9A6901863BB2B45B00C /* [CP] Check Pods Manifest.lock */,
+				AF3376AC1E467E9500D99027 /* Sources */,
+				AF3376AD1E467E9500D99027 /* Frameworks */,
+				AF3376AE1E467E9500D99027 /* Resources */,
+				D9BC99F4F118F6178092FBE0 /* [CP] Embed Pods Frameworks */,
+				6539B9501936F96EF2BDAC82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF3376B21E467E9500D99027 /* PBXTargetDependency */,
+			);
+			name = AuxiliumUITests;
+			productName = AuxiliumUITests;
+			productReference = AF3376B01E467E9500D99027 /* AuxiliumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF3376891E467E9400D99027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Brian Lin";
+				TargetAttributes = {
+					AF3376901E467E9400D99027 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V43B8P7A9G;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					AF3376A41E467E9500D99027 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V43B8P7A9G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF3376901E467E9400D99027;
+					};
+					AF3376AF1E467E9500D99027 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V43B8P7A9G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF3376901E467E9400D99027;
+					};
+				};
+			};
+			buildConfigurationList = AF33768C1E467E9400D99027 /* Build configuration list for PBXProject "Auxilium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF3376881E467E9400D99027;
+			productRefGroup = AF3376921E467E9500D99027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF3376901E467E9400D99027 /* Auxilium */,
+				AF3376A41E467E9500D99027 /* AuxiliumTests */,
+				AF3376AF1E467E9500D99027 /* AuxiliumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF33768F1E467E9400D99027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3376CB1E4689F400D99027 /* Logo_White.png in Resources */,
+				AF33769F1E467E9500D99027 /* LaunchScreen.storyboard in Resources */,
+				AF3376C31E46849100D99027 /* GoogleService-Info.plist in Resources */,
+				AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */,
+				AF3376C71E46897900D99027 /* Aux_Blue_Bkg.png in Resources */,
+				AF6EBF901E46D2450031C8F0 /* Food.png in Resources */,
+				AF33769A1E467E9500D99027 /* Main.storyboard in Resources */,
+				AF6EBF921E46D3250031C8F0 /* Clean.png in Resources */,
+				AF2BE3EA1E46F8B200004582 /* left_arrow.png in Resources */,
+				AF81C33A1E476DAF006C36C3 /* Charity.png in Resources */,
+				AF6EBF8E1E46C8380031C8F0 /* EventTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3376A31E467E9500D99027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3376AE1E467E9500D99027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B2324C74AFFEB4AE6E677DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C66C3501AFF0D79B06A85C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		633817B000510B145138CA54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6539B9501936F96EF2BDAC82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D72E9A6901863BB2B45B00C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A5D4F05AD622AC796C1A965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB17F88B66805892016ECDD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BC99F4F118F6178092FBE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F36F3BC1E7A8D8ED475BCE63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF33768D1E467E9400D99027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2BE3EC1E47098200004582 /* createEventViewController.swift in Sources */,
+				AF3376CD1E468EA600D99027 /* MainViewController.swift in Sources */,
+				AFC72D0B1E46DB42003805CC /* EventViewController.swift in Sources */,
+				AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */,
+				AF3376C51E46895800D99027 /* SignInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3376A11E467E9500D99027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3376AA1E467E9500D99027 /* AuxiliumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3376AC1E467E9500D99027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3376B51E467E9500D99027 /* AuxiliumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF3376A71E467E9500D99027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF3376901E467E9400D99027 /* Auxilium */;
+			targetProxy = AF3376A61E467E9500D99027 /* PBXContainerItemProxy */;
+		};
+		AF3376B21E467E9500D99027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF3376901E467E9400D99027 /* Auxilium */;
+			targetProxy = AF3376B11E467E9500D99027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF3376981E467E9500D99027 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3376991E467E9500D99027 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF33769E1E467E9500D99027 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF3376B71E467E9500D99027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF3376B81E467E9500D99027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF3376BA1E467E9500D99027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = Auxilium/Auxilium.entitlements;
+				DEVELOPMENT_TEAM = V43B8P7A9G;
+				INFOPLIST_FILE = Auxilium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.LAH.auxilium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF3376BB1E467E9500D99027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = Auxilium/Auxilium.entitlements;
+				DEVELOPMENT_TEAM = V43B8P7A9G;
+				INFOPLIST_FILE = Auxilium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.LAH.auxilium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AF3376BD1E467E9500D99027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V43B8P7A9G;
+				INFOPLIST_FILE = AuxiliumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brian.losaltoshacks.AuxiliumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxilium.app/Auxilium";
+			};
+			name = Debug;
+		};
+		AF3376BE1E467E9500D99027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134283224CBFF1EFBD4D921F /* Pods-AuxiliumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V43B8P7A9G;
+				INFOPLIST_FILE = AuxiliumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brian.losaltoshacks.AuxiliumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auxilium.app/Auxilium";
+			};
+			name = Release;
+		};
+		AF3376C01E467E9500D99027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9C6605A321177CD2A4B2C /* Pods-AuxiliumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V43B8P7A9G;
+				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brian.losaltoshacks.AuxiliumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Auxilium;
+			};
+			name = Debug;
+		};
+		AF3376C11E467E9500D99027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1725A781ED7017CEB460243E /* Pods-AuxiliumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V43B8P7A9G;
+				INFOPLIST_FILE = AuxiliumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brian.losaltoshacks.AuxiliumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Auxilium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF33768C1E467E9400D99027 /* Build configuration list for PBXProject "Auxilium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3376B71E467E9500D99027 /* Debug */,
+				AF3376B81E467E9500D99027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3376B91E467E9500D99027 /* Build configuration list for PBXNativeTarget "Auxilium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3376BA1E467E9500D99027 /* Debug */,
+				AF3376BB1E467E9500D99027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3376BC1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3376BD1E467E9500D99027 /* Debug */,
+				AF3376BE1E467E9500D99027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3376BF1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3376C01E467E9500D99027 /* Debug */,
+				AF3376C11E467E9500D99027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF3376891E467E9400D99027 /* Project object */;
+}

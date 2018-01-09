@@ -1,0 +1,6 @@
+framework module Pods_AuxiliumUITests {
+  umbrella header "Pods-AuxiliumUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

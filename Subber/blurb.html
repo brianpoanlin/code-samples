@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html >
+  <head>
+	      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <title>CSS3 Timeline</title>
+
+        <style>
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  font-size: 100%;
+  font-family: "Noto Sans", sans-serif;
+  color: #eee9dc;
+  background: #48b379;
+}
+
+h2 {
+  margin: 3em 0 0 0;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+#timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 8px solid #eee9dc;
+}
+#timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+#timeline p {
+  margin: 0 0 15px;
+}
+
+.date {
+  margin-top: -10px;
+  top: 50%;
+  left: -158px;
+  font-size: 3em;
+  line-height: 20px;
+  position: absolute;
+}
+
+.circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #48b379;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.content {
+  max-height: 20px;
+  padding: 50px 20px 0;
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+}
+.content:before, .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+.content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+.content:after {
+  border-right-color: #48b379;
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 20px;
+  transition: transform 0.2s linear;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked + .relative label {
+  cursor: auto;
+  transform: translateX(42px);
+}
+.radio:checked + .relative .circle {
+  background: #f98262;
+}
+.radio:checked ~ .content {
+  max-height: 180px;
+  border-color: #eee9dc;
+  margin-right: 20px;
+  transform: translateX(20px);
+  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+.radio:checked ~ .content p {
+  max-height: 200px;
+  color: #eee9dc;
+  transition: color 0.3s linear 0.3s;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+  #timeline {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  #timeline li {
+    margin: 50px 0;
+  }
+
+  label {
+    width: 85%;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    transform: translateX(18px);
+  }
+
+  .content {
+    padding-top: 45px;
+    border-color: #eee9dc;
+  }
+  .content:before, .content:after {
+    border: solid transparent;
+    bottom: 100%;
+  }
+  .content:before {
+    border-bottom-color: inherit;
+    border-width: 17px;
+    top: -16px;
+    left: 50px;
+    margin-left: -17px;
+  }
+  .content:after {
+    border-bottom-color: #48b379;
+    border-width: 20px;
+    top: -20px;
+    left: 50px;
+    margin-left: -20px;
+  }
+  .content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .circle, .date {
+    display: none;
+  }
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <h2>Subber | Blurb</h2>
+    	<p style="white-space: nowrap;"><i class="fa fa-hand-o-right"></i> This page is dedicated to those who want to learn about Subber with only a few minutes to spare <i class="fa fa-heart-o"></i></p>
+
+<ul id='timeline'>
+  <li class='work'>
+    <input class='radio' id='work5' name='works' type='radio' checked>
+    <div class="relative">
+      <label for='work5'>Convenient.</label>
+      <span class='date'><!--Convenient.--><i class="fa fa-cogs"></i></span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Subber allows you to manage all of your subscription needs from one intuitive portal. Browse through dozens of unique subscriptions boxes and when you find a favorite, simply click "Subscribe" to add to your cart. After paying for all upon checkout, kick-back and relax as your boxes are arriving soon; and if you selected the subscription option, your orders will recur automatically each month. 
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work4' name='works' type='radio'>
+    <div class="relative">
+      <label for='work4'>Save.</label>
+      <span class='date'><!--Save.--><i class="fa fa-usd"></i></span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        We work diligently with our partner box companies to provide you with the best prices, satisfaction guaranteed. So when you add three or more boxes to your cart, you will automatically receive an 8% discount off of each of your box each month! 
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work3' name='works' type='radio'>
+    <div class="relative">
+      <label for='work3'>Rewards.</label>
+      <span class='date'><!--Rewards.--><i class="fa fa-gift"></i></span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+Subber+ is a free rewards program we offer to ALL of our users no matter how many boxes they subscribe to. Earn points each time you subscribe to a box, and the points recur each month! Then redeem your points for discounts, free subscription boxes, and upgrades, depending on your tier!</p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work2' name='works' type='radio'>
+    <div class="relative">
+      <label for='work2'>Managerial.</label>
+      <span class='date'><!--Managerial.--><i class="fa fa-line-chart"></i></span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+Rather than setting up a personal account on each of your subscription box's website, set up 1 with Subber to manage ALL. Creating an account takes 5 seconds, and log-in anytime to track your boxes. With so many boxes out there, we know it's tempting to subscribe to every one. So if at any time you decide to change boxes, log-in to your account and swap it out for another box with a click of a button!</p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work1' name='works' type='radio'>
+    <div class="relative">
+      <label for='work1'>Secure.</label>
+      <span class='date'><!--Safe.--><i class="fa fa-lock"></i></span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        We directly transfer your invoice and payment to each respective subscription box company. They would then import your order to their database and process it just as if you had subscribed through their website. As for your personal information, your data is stored on a secure server behind a firewall. And your payment is encrypted through the Payment Card Industry Data Security Standard (PCI-DSS) which ensures the secure handling of your credit card information by our store and its service providers.
+      </p>
+    </div>
+  </li>
+</ul>
+    
+    
+    
+    
+    
+  </body>
+</html>

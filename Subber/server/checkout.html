@@ -1,0 +1,219 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Stripe Sample Form</title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+        <body>
+        <form name="checkoutForm" stripe-form="stripeCallback" ng-submit="onSubmit()" data-abide>
+
+        <div ng-if="processing" us-spinner></div>
+
+        <fieldset>
+        <legend>Shipping Information</legend>
+
+        <div class="row">
+
+            <label class="large-12 columns">Name
+                <input ng-model="name" type="text" placeholder="Name">
+            </label>
+
+            <label class="large-12 columns">Address
+                <input ng-model="address" type="text" placeholder="Address">
+            </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment Information</legend>
+
+        <div class="row">
+            <div class="large-6 columns" ng-class="{error: checkoutForm.number.$invalid}">
+                <label>Card Information
+                    <input ng-model="number" name="number" payments-format="card" payments-validate="card"
+                           placeholder="Card Number" type="text"/>
+                </label>
+                <small class="error">Invalid card number</small>
+            </div>
+            <div class="large-3 columns" ng-class="{error: checkoutForm.expiry.$invalid}">
+                <label>Expiry
+                    <input ng-model="expiry" name="expiry" payments-format="expiry" payments-validate="expiry"
+                           placeholder="Expiry" type="text"/>
+                </label>
+                <small class="error">Invalid date.</small>
+            </div>
+            <div class="large-3 columns" ng-class="{error: checkoutForm.cvc.$invalid}">
+                <label>CVC
+                    <input ng-model="cvc" name="cvc" payments-format="cvc" payments-validate="cvc"
+                           placeholder="CVC" type="text"/>
+                </label>
+                <small class="error">Invalid CVC.</small>
+            </div>
+
+            <div class="large-12 columns">
+                <strong>
+                    Amount to pay: {{totalAmount}}$
+                </strong>
+            </div>
+        </div>
+    </fieldset>
+
+    <alert ng-if="stripeError" type="'alert'" close="hideAlerts()">
+        Stripe returned an error: {{stripeError}}
+    </alert>
+
+    <alert ng-if="stripeToken" close="hideAlerts()">
+        Stripe successfully acquired! Token: {{stripeToken}}
+    </alert>
+
+    <div class="clearfix">
+        <div class="right">
+            <button class="cancel" ng-click="$dismiss();">Cancel</button>
+            <button type="submit" ng-disabled="checkoutForm.$invalid">Place Order</button>
+        </div>
+    </div>
+
+</form>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Stripe Sample Form</title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+        <script type="text/javascript">
+          Stripe.setPublishableKey('pk_test_Ns6XiSYHxnXGr6OKjBHdB4zt');
+            $(document).ready(function() {
+                function addInputNames() {
+
+                    $(".card-number").attr("name", "card-number")
+                    $(".card-cvc").attr("name", "card-cvc")
+                    $(".card-expiry-year").attr("name", "card-expiry-year")
+                }
+                function removeInputNames() {
+                    $(".card-number").removeAttr("name")
+                    $(".card-cvc").removeAttr("name")
+                    $(".card-expiry-year").removeAttr("name")
+                }
+                function submit(form) {
+                  
+                    removeInputNames(); 
+
+                    $(form['submit-button']).attr("disabled", "disabled")
+                    Stripe.createToken({
+                        number: $('.card-number').val(),
+                        cvc: $('.card-cvc').val(),
+                        exp_month: $('.card-expiry-month').val(), 
+                        exp_year: $('.card-expiry-year').val()
+                    }, function(status, response) {
+                        if (response.error) {
+                            $(form['submit-button']).removeAttr("disabled")
+        
+                            $(".payment-errors").html(response.error.message);
+                            addInputNames();
+                        } else {
+                            var token = response['id'];
+                            var input = $("<input name='stripeToken' value='" + token + "' style='display:none;' />");
+                            form.appendChild(input[0])
+                            form.submit();
+                        }
+                    });
+                    
+                    return false;
+                }
+                
+                jQuery.validator.addMethod("cardNumber", Stripe.validateCardNumber, "Please enter a valid card number");
+                jQuery.validator.addMethod("cardCVC", Stripe.validateCVC, "Please enter a valid security code");
+                jQuery.validator.addMethod("cardExpiry", function() {
+                    return Stripe.validateExpiry($(".card-expiry-month").val(), 
+                                                 $(".card-expiry-year").val())
+                }, "Please enter a valid expiration");
+                $("#example-form").validate({
+                    submitHandler: submit,
+                    rules: {
+                        "card-cvc" : {
+                            cardCVC: true,
+                            required: true
+                        },
+                        "card-number" : {
+                            cardNumber: true,
+                            required: true
+                        },
+                        "card-expiry-year" : "cardExpiry" 
+                    }
+                });
+                             
+                addInputNames();
+            });
+        </script>
+    </head>
+    <body>
+
+        <h1>Stripe Example Form</h1>
+    
+        <form action="/" method="post" id="example-form" style="display: none;">
+
+            <div class="form-row">
+                <label for="name" class="stripeLabel">Your Name</label>
+                <input type="text" name="name" class="required" />
+            </div>            
+    
+            <div class="form-row">
+                <label for="email">E-mail Address</label>
+                <input type="text" name="email" class="required" />
+            </div>            
+    
+            <div class="form-row">
+                <label>Card Number</label>
+                <input type="text" maxlength="20" autocomplete="off" class="card-number stripe-sensitive required" />
+            </div>
+            
+            <div class="form-row">
+                <label>CVC</label>
+                <input type="text" maxlength="4" autocomplete="off" class="card-cvc stripe-sensitive required" />
+            </div>
+            
+            <div class="form-row">
+                <label>Expiration</label>
+                <div class="expiry-wrapper">
+                    <select class="card-expiry-month stripe-sensitive required">
+                    </select>
+                    <script type="text/javascript">
+                        var select = $(".card-expiry-month"),
+                            month = new Date().getMonth() + 1;
+                        for (var i = 1; i <= 12; i++) {
+                            select.append($("<option value='"+i+"' "+(month === i ? "selected" : "")+">"+i+"</option>"))
+                        }
+                    </script>
+                    <span> / </span>
+                    <select class="card-expiry-year stripe-sensitive required"></select>
+                    <script type="text/javascript">
+                        var select = $(".card-expiry-year"),
+                            year = new Date().getFullYear();
+                        for (var i = 0; i < 12; i++) {
+                            select.append($("<option value='"+(i + year)+"' "+(i === 0 ? "selected" : "")+">"+(i + year)+"</option>"))
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <button type="submit" name="submit-button">Submit</button>
+            <span class="payment-errors"></span>
+        </form>
+
+        <script>if (window.Stripe) $("#example-form").show()</script>
+        <noscript><p>JavaScript is required for the registration form.</p></noscript>
+
+    </body>
+</html> -->
+
+
+
+</body>
+</html>
