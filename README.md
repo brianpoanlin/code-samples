@@ -1,12 +1,14 @@
-Sample Code
-=============
-
-List of projects:
-
 # Auxiulium (iOS)
-Full project
+Full Project.
 
 # Guru (iOS)
-Partial. For full project please visit: https://github.com/TheCurryMan/Guru
+Partial Project. For full project please visit: https://github.com/TheCurryMan/Guru
 
+# Novesta (iOS)
+Full Project.
 
+# Ping (iOS)
+Partial Project.
+
+# Subber (HTML/CSS/JavaScript)
+Full Project.
